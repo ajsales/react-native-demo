@@ -10,7 +10,12 @@ export default function ViewImageScreen() {
 		<View style={styles.container}>
 			<View style={[styles.button, styles.closeButton]}/>
 			<View style={[styles.button, styles.deleteButton]}/>
-      <Image source={require('../assets/chair.jpg')} resizeMode="contain" style={styles.image}/>
+			
+      <Image
+				source={require('../assets/chair.jpg')}
+				resizeMode="contain"
+				style={styles.image}
+			/>
 		</View>
 	);
 }

@@ -10,11 +10,19 @@ import {
 export default function WelcomeScreen() {
 	return (
 		<View style={styles.container}>
-			<ImageBackground source={require('../assets/background.jpg')} resizeMode="cover" style={styles.background}>
+			<ImageBackground
+				source={require('../assets/background.jpg')}
+				resizeMode="cover"
+				style={styles.background}
+			>
 				<View style={styles.logoContainer}>
-					<Image source={require('../assets/logo-red.png')} style={styles.logo}/>
-					<Text>See What You Don't Need</Text>
+					<Image
+						source={require('../assets/logo-red.png')}
+						style={styles.logo}
+					/>
+					<Text>Sell What You Don't Need</Text>
 				</View>
+
 				<View style={[styles.button, styles.loginButton]}/>
 				<View style={[styles.button, styles.registerButton]}/>
 			</ImageBackground>
